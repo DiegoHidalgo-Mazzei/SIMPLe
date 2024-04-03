@@ -33,33 +33,117 @@
 </style>
 </head>
 <body>
+    <h1>Índice de Secciones</h1>
+    <ol>
+        <li><a href="#pantalla_principal">Pantalla principal</a></li>
+        <li><a href="#test_diario">Test diario</a></li>
+        <li><a href="#test_semanal">Test semanal</a></li>
+        <li><a href="#mensaje_psicoeducativo">Mensaje psicoeducativo</a></li>
+        <li><a href="#opciones_de_configuracion">Opciones de configuración</a></li>
+        <li><a href="#registrar_eventos_estresantes">Registrar Eventos Estresantes</a></li>
+        <li><a href="#modulo_de_medicacion">Módulo de medicación</a></li>
+        <li><a href="#modulo_de_prodroMos">Módulo de pródromos</a></li>
+        <li><a href="#mas_informacion_del_proyecto">Más información del proyecto</a></li>
+    </ol>
 
-<div class="container">
-  <header>
-    <img src="images/simpleLogo.png" alt="Proyecto SIMPLe" class="header-image">
-  </header>
+    <h2 id="pantalla_principal">1. Pantalla principal</h2>
+    <p>La pantalla principal le muestra de manera aproximada la evolución en el tiempo de su estado de ánimo de acuerdo a sus respuestas del test diario que realiza.
+La línea central verde esmeralda es la que le indica la evolución en el tiempo de su estado de ánimo.
+Las demás líneas sirven como parámetros de referencia de su estado de ánimo, así la línea verde central establece un parámetro de base de su estabilidad (NORMAL). Esta puede estar oculta por la línea verde esmeralda si su estabilidad es absoluta, pero lo más normal es que su estado de ánimo fluctúe alrededor de esta.
+En la parte superior, la línea roja sugiere un estado importante de euforia, mientras que la línea amarilla sugiere un grado de euforia en menor grado.
+En tanto en la parte inferior, la línea azul cielo indica un grado de estado ánimo bajo o deprimido, mientras que la línea azul marino sugiere un estado depresivo aún más importante.
+Conviene recordar que estas líneas son sólo a forma de referencia y no diagnósticas. Además un día aislado de bajón o subida, generalmente, no debería preocuparle ya que puede deberse a acontecimientos o emociones pasajeras. Sin embargo, si la línea indicadora se mantiene por debajo o arriba de unas de las líneas de referencia por mucho tiempo puede ser indicativo de una recaída.
+En la parte inferior del gráfico encontrará la fecha aproximada en la cual registró su estado de ánimo.
+En el ángulo superior izquierdo de la pantalla principal encontrará una barra que despliega un menú con los siguientes items.
+•	Registrar evento estresante: permite señalar que un evento vital de importancia le ha ocurrido en el día en cuestión. Una vez que lo seleccione le dará la opción de marcar el tipo de evento estresante que le ha ocurrido.
+•	Medicación: Acceso al módulo de medicación, para registrar o modificar recordatorios de la pauta de medicación.
+•	Test Diario: permite acceder a realizar el test diario, en el caso que lo quiera repetir o si olvidó registrarlo en el día.
+•	Prodrómicos: Acceso al módulo de síntomas/signos prodrómicos, donde se podrá personalizar preguntas del test semanal de acuerdo a los síntomas padecidos durante las últimas recaídas.
+•	Palmarés: Se accede a una galeria donde se pueden visualizar y consultar las medallas conseguidas en las últimas semanas.
+•	Compartir: Permite compartir el gráfico por diversos medios online (email, redes sociales, etc).
+•	Opciones: Otorga acceso a la pantalla de configuraciones donde puede seleccionar las horas y días que quiere realizar los tests entre otras modificaciones del funcionamiento de la aplicación.
+•	Ref. Símbolos: Muestra los significados de los símbolos del gráfico de la pantalla principal.
+•	Tutorial: Permite acceder a este tutorial.
+•	Acerca de: Muestra información sobre la versión de la aplicación.
+•	Salir: Desconectarse de la aplicación para acceder con otro usuario.
+</p>
+    
 
-  <h1>Proyecto SIMPLe</h1>
+    <h2 id="test_diario">2. Test diario</h2>
+    <p>El test diario consiste en cinco* sencillas preguntas secuenciales a ser contestadas de manera rápida a través de un botón deslizante y un gráfico animado. Este botón deslizante hacia la izquierda indica un grado menor y a la derecha un grado mayor del síntoma a ser evaluado. La posición por defecto  indica el estado basal más frecuente. Este test de aproximadamente 1 minuto de duración le será solicitado contestar una vez al día a la hora que lo configure.
+En el extremo superior derecho  de cada pantalla encontrará un botón que al ser presionado le mostrará información sobre cómo contestar a cada pregunta de la manera más adecuada posible (i).
+En el extremo superior derecho (>)  de la pantalla encontrará un botón para pasar a la siguiente pregunta una vez que haya seleccionado su respuesta. Podrá volver atrás si desea corregirla a través del botón en el extremo superior izquierdo (<) .
+Diariamente las preguntas se alternan de forma aleatoria en su orden para evitar un efecto de «acostumbramiento» en las respuestas.
+*Si activa el módulo de recordatorio de medicación en el menú de Opciones, las preguntas del test diario se reducen a 4.
+</p>
+ 
 
-  <section>
-    <h2>Temas de Ayuda</h2>
-    <nav>
-      <ul>
-        <li>1. Pantalla principal</li>
-        <li>2. Test diario</li>
-        <li>3. Test semanal</li>
-        <li>4. Mensajes psicoeducativos</li>
-        <li>5. Opciones de configuración</li>
-        <li>6. Registro de Eventos Estresantes</li>
-        <li>7. Referencia de Símbolos</li>
-        <li>8. Módulo de medicación</li>
-        <li>9. Módulo de Gamificación</li>
-        <li>10. Módulo de Pródromos</li>
-        <li>11. Información del Proyecto</li>
-      </ul>
-    </nav>
-  </section>
-</div>
+    <h2 id="test_semanal">3. Test semanal</h2>
+    <p>El test semanal consiste en varias preguntas a ser contestadas a través de las respuestas SI o NO en los botones. El test es solicitado una sola vez por semana en condiciones de estabilidad, aunque en caso de importantes variaciones del estado de ánimo puede ser solicitado de contestar una segunda vez en la misma semana. En otras ocasiones en caso de posibles variaciones puede requerirse contestar sólo algunas de las preguntas del mismo test. En la pantalla de configuraciones se puede seleccionar el día de la semana preferido para contestar este test.
+En el extremo superior derecho de la pantalla encontrará un botón para pasar a la siguiente pregunta (>) una vez que haya seleccionado su respuesta. Podrá volver atrás si desea corregirla a través del botón en la parte superior izquierda de la pantalla (<).
+En caso de que durante el test semanal se detecten síntomas que requieran una atención urgente, se le ofrecerá llamar a urgencias desde su móvil y se enviará automáticamente un mail a la dirección de email del referente que haya seleccionado en Opciones.
+También presionando el botón de «Llamar a urgencias» su teléfono móvil llamará al número telefónico de urgencias que Ud. haya configurado en opciones.
+</p>
 
+
+    <h2 id="mensaje_psicoeducativo">4. Mensaje psicoeducativo</h2>
+    <p>Una o varias veces al día dependiendo de su estado, recibirá a través de una notificación en su móvil breves mensajes psicoeducativos adaptados a su situación. La hora inicial para recibir las notificaciones de estos mensajes puede ser seleccionada en la pantalla de configuraciones. Una vez leído el mensaje, puede volver a la pantalla principal de su telefóno presionando el botón Volver.</p>
+
+
+    <h2 id="opciones_de_configuracion">5. Opciones de configuración</h2>
+    <p>En la pantalla de Opciones/Configuraciones podrá personalizar varios parámetros del funcionamiento de la aplicación:
+La primera línea le permite configurar el horario en el cual recibirá las notificaciones para realizar el test diario . En el caso del test diario lo ideal sería que seleccione una hora libre hacia el final del día, de manera que pueda hacer una valoración global de su estado de ánimo con tranquilidad.
+La segunda línea le permite configurar el horario en el cual recibirá los mensajes psicoeducativos. Normalmente son textos cortos adaptados a su situación que no llevará más de un minuto. Lo ideal es configurarlo a una hora en la cual sepa que estará libre para poder leerlo con tranquilidad.
+La tercera línea le permite configurar el día  de la semana en el cual se le solicitará contestar el test semanal. La duración del test semanal es de aproximadamente 5 minutos. Por tanto, lo ideal es configurarlo para un día en el cual normalmente tenga más tiempo para contestarlo con tranquilidad.
+En el apartado de «Medicamentos» podrá activar o desactivar el módulo de recordatorio de medicación. Sólo si lo activa, la opción de configurarlo aparecerá entre las opciones del menú. Recuerde que con esto se eliminará una de las preguntas del test diario.
+Finalmente en el apartado de «General» podrá configurar la dirección de e-mail del referente receptor de mensajes de alerta. Recuerde que previamente deberá notificar al receptor de que lo ha designado referente y facilitarle el nombre de usuario con el que accede a la aplicación para que pueda identificarlo.
+También, podrá configurar al número de urgencias/emergencias local al cual llamar en el caso de sintomatología urgente.
+</p>
+
+
+    <h2 id="registrar_eventos_estresantes">6. Registrar Eventos Estresantes</h2>
+    <p>A través de esta opción tiene la posibilidad de registrar un evento estresante de relevancia que le haya podido ocurrir y que pudiera a su vez tener incidencia sobre su estado de ánimo. De acuerdo a la gravedad de cada situación según una escala de este tipo de circunstancias, esto atenúa la puntuación del test diario y además se marcará como un símbolo en el gráfico.
+Al hacer clic en la primera opción se desplegará una lista de diferentes situaciones entre las cuáles podrá seleccionar la que más se acerque al evento estresante que haya padecido aquel día.
+Cuando encuentre la opción más cercana de entre las disponibles, selecciónela y luego apriete el botón de Guardar.
+Puede guardar varios eventos estresantes en un sólo día, pero recuerde que sólo uno se verá reflejado en el gráfico.
+</p>
+    
+
+    <h2 id="modulo_de_medicacion">7. Módulo de medicación</h2>
+    <p>Este módulo le permitirá listar su medicación y recibir un recordatorio a la hora indicada que debe tomarla. Así mismo, esto le «ahorrará» contestar la pregunta sobre la toma de medicación en el test diario de forma automática. Tenga en cuenta que si toma muchas medicaciones , recibirá muchas notificaciones.
+El módulo está diseñado para recordarle sólo aquellas medicaciones que tengan que ver con el trastorno bipolar. Son las que están listadas entre las facilitadas por la aplicación.
+Para activar el módulo recordatorio de la aplicación debe ir al menú lateral y seleccionar Opciones:
+En la pantalla de opciones debe cambiar el botón de OFF a ON para activar el módulo. Una vez hecho esto, salga del menú de opciones y en el menú lateral se mostrará una nueva opción llamada Medicación.
+Si presiona dicha opción, ingresará al módulo de medicación.
+Para ingresar una nueva medicación a su lista, tiene que presionar el signo (+) en el ángulo superior derecho de la pantalla.
+Aparecerá una nuev pantalla donde debe seleccionar el medicamento que quiere añadir a su lista. Al presionar en Seleccione, se desplegará una lista  para seleccionar la médicación (la lista se encuentra en nombres genéricos, no comerciales, fíjese el nombre genérico en el envase de su medicación). Posteriormente debe seleccionar los horarios indicados para su toma, haciendo click en cada franja horaria que deba tomar la aplicación. Finalmente presione el botón de Guardar.
+Las franjas horarias de cada toma pueden ser configurados accediendo al icono de la tuerca en la parte superior derecha de la pantalla de la lista de medicaciones. Se abrirá una ventana donde al presionar sobre alguno de las franjas horarias (Desayuno, Almuerzo, Cena, Antes de dormir), podrá configurar la hora exacta de la aparición de la notificación.
+Para modificar o eliminar una de las medicaciones listadas, mantenga presionado el nombre de la medicación.
+A la hora indicada de la toma de medicación recibirá una notificación o varias si tiene más de una medicación en esa franja horaria, preguntándole si la ha tomado.
+Al presionar la notificación, se le abrirá una pantalla donde podrá contestar si ha tomado o no cada medicación en esa franja horaria. Para confirmar que la tomó haga click sobre su nombre y al final presione Guardar.
+Al activar el módulo de medicación, se eliminará la última pregunta del test diario, ya que la misma será reemplazada por sus respuestas sobre si toma o no cada una de las medicaciones.
+Recuerde que si tiene muchas medicaciones en su lista de medicación, esto se traducirá en un aumento de al menos 4 notificaciones de SIMPLe al día en su teléfono.
+</p>
+ 
+
+    <h2 id="modulo_de_prodroMos">8. Módulo de pródromos</h2>
+    <p>Elaboración de la lista de pródromos
+Es muy importante identificar el inicio de nuevos episodios ya que ello permite actuar rápidamente y por tanto evitar las recaídas y las consecuencias que éstas implican (hospitalizaciones, dificultades sociales, problemas laborales, etc.). Cuanto antes detectemos las primeras señales de recaída, más probable es que ésta sea menos intensa, menos disruptiva y que necesitemos menos medicación para tratarla.
+A estos primeros signos de alarma les llamamos “pródromos”. Elaborar una lista de pródromos, si es posible con la colaboración de algún familiar, resulta sumamente útil. Para ello deberíamos tener en cuenta los siguientes factores:
+•	Centrarse en conductas que se puedan objetivar y medir, lo cual facilitará su identificación. Por tanto, conviene centrarse en qué hago en lugar de en cómo me siento.
+•	Haberse presentado regularmente antes de cada episodio.
+•	Evaluables en el día a día.
+•	Cambios sutiles. Con esto queremos decir que no hablamos de síntomas sino de aquellas señales que los preceden.
+Por ejemplo, en una persona que habitualmente duerme 8 horas, dormir 4 sería un síntoma pero dormir 7 sería un pródromo. Por tanto, si nos centramos en los pródromos tendremos que considerar cambios más discretos como el hecho de “despertarme antes de que suene el despertador” o “tardar más de media hora en dormirme” (si habitualmente me duermo a los pocos minutos de acostarme).
+•	Que supongan una distinción con respecto al temperamento y funcionamiento habitual de la persona.
+Por ejemplo, la conducta de “iniciar conversaciones con desconocidos” no tendrá el mismo significado si la presenta una persona extrovertida que una persona tímida. En cuanto al funcionamiento, puede ser útil tener en cuenta cuál es el nivel habitual de actividades que realiza la persona para poder valorar las variaciones del mismo, por ejemplo, “ir al gimnasio más de 3 veces por semana” en alguien que como mucho suele ir un par de veces. Todo cambio cualitativo (por ejemplo “empezar a leer libros sobre temas esotéricos” en alguien que no sentía atracción por estos temas) o cuantitativo (fumar más de un paquete de cigarrillos al día, si habitualmente no fumo más de 15) puede ser importante.
+Es aconsejable que identifiques 3 señales de alarma, para ello es útil hacer un repaso de los cambios que repetidamente han precedido a las recaídas en aspectos como las horas de sueño, el nivel de actividad, la apariencia física, etc. Una vez identificados rellena los espacios de forma sintética para completar la pregunta que SIMPLe te hará de forma semanal acerca de tus pródromos completando los espacios en blanco correspondientes a el pródromo más común que recuerdes previo a cada tipo de episodio. Luego de apretar el botón de guardar,  con ellos se elaborarán unas preguntas personalizadas sobre los mismos.
+Estas tres preguntas formarán parte del test semanal, antes de la pregunta de síntomas psicóticos y riesgo suicida. 
+Recuerda que no se trata de alarmarse ante la aparición de una señal de forma aislada pero si se presentan más de dos de estas señales de forma repetida 2-3 días convendría contactar con el profesional. Ello permitirá revisar el tratamiento farmacológico y/o llevar a cabo una serie de pautas conductuales con el objetivo de evitar que estas primeras señales se conviertan en síntomas con mayores consecuencias.
+</p>
+
+    <h2 id="mas_informacion_del_proyecto">9. Más información del proyecto</h2>
+    <p>Puede encontrar más información sobre el proyecto en <a href="https://simplebipolarproject.org/">https://simplebipolarproject.org/</a></p>
+    <!-- More content from the section goes here -->
 </body>
 </html>
