@@ -1,214 +1,265 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyecto SIMPLe</title>
-<style>
-  body {
-    background-color: #fbf2f1;
-    color: #3d3b3b;
-    font-family: Arial, sans-serif;
-    text-align: center; /* Center aligns all content */
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 600px; /* Set a max-width for mobile devices */
-    margin: auto; /* This will center the container */
-    padding: 20px;
-  }
-  .header-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px; /* Adds space below the header image */
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto SIMPLe</title>
+    <style>
+        body {
+            background-color: #fbf2f1;
+            color: #3d3b3b;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* Center aligns all content */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            /* Set a max-width for mobile devices */
+            margin: auto;
+            /* This will center the container */
+            padding: 20px;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            /* Adds space below the header image */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        /* Collapsible content */
+        .content {
+            display: none;
+            /* Hide content by default */
+            overflow: hidden;
+            /* Hide overflow */
+        }
+
+        .collapsible {
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #ddd;
+        }
+    </style>
 </head>
+
 <body>
-   <div class="container">
-    <h1>Índice de Secciones</h1>
-    <nav>
-        <ul>
-            <li><a href="#pantalla_principal">Pantalla principal</a></li>
-            <li><a href="#test_diario">Test diario</a></li>
-            <li><a href="#test_semanal">Test semanal</a></li>
-            <li><a href="#mensaje_psicoeducativo">Mensaje psicoeducativo</a></li>
-            <li><a href="#opciones_de_configuracion">Opciones de configuración</a></li>
-            <li><a href="#registrar_eventos_estresantes">Registrar Eventos Estresantes</a></li>
-            <li><a href="#modulo_de_medicacion">Módulo de medicación</a></li>
-            <li><a href="#modulo_de_prodroMos">Módulo de pródromos</a></li>
-            <li><a href="#mas_informacion_del_proyecto">Más información del proyecto</a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="container">
+        <h1>Índice de Secciones</h1>
+        <nav>
+            <ul>
+                <li><a href="#pantalla_principal">Pantalla principal</a></li>
+                <li><a href="#test_diario">Test diario</a></li>
+                <li><a href="#test_semanal">Test semanal</a></li>
+                <li><a href="#mensaje_psicoeducativo">Mensaje psicoeducativo</a></li>
+                <li><a href="#opciones_de_configuracion">Opciones de configuración</a></li>
+                <li><a href="#registrar_eventos_estresantes">Registrar Eventos Estresantes</a></li>
+                <li><a href="#modulo_de_medicacion">Módulo de medicación</a></li>
+                <li><a href="#modulo_de_prodroMos">Módulo de pródromos</a></li>
+                <li><a href="#mas_informacion_del_proyecto">Más información del proyecto</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<div class="container">
-    <h2 id="pantalla_principal">1. Pantalla principal</h2>
-    <p>
-        La pantalla principal muestra de manera aproximada la evolución en el tiempo de su estado de ánimo, según sus respuestas del test diario.
-        <br><br>
-        La línea central verde esmeralda indica la evolución de su estado de ánimo a lo largo del tiempo. Las demás líneas sirven como parámetros de referencia:
-        <ul>
-            <li>La línea verde central establece un parámetro de base de estabilidad (NORMAL), aunque puede estar oculta por la línea verde esmeralda si su estabilidad es absoluta.</li>
-            <li>La línea roja sugiere un estado importante de euforia, mientras que la amarilla sugiere un grado menor.</li>
-            <li>En la parte inferior, la línea azul cielo indica un estado ánimo bajo o deprimido, mientras que la azul marino sugiere un estado depresivo aún más importante.</li>
-        </ul>
-        Estas líneas son solo referenciales y no diagnósticas. Un día aislado de altibajos no debería preocupar, pero si la línea indicadora se mantiene por mucho tiempo por debajo o arriba de las líneas de referencia, puede ser indicativo de una recaída.
-        <br><br>
-        En la parte inferior del gráfico se muestra la fecha aproximada en la que registró su estado de ánimo.
-        <br><br>
-        En el ángulo superior izquierdo de la pantalla principal, encontrará un menú con los siguientes ítems:
-        <ul>
-            <li>Registrar evento estresante: Permite señalar un evento vital de importancia ocurrido en el día, con opción de marcar su tipo.</li>
-            <li>Medicación: Acceso al módulo para registrar o modificar recordatorios de la pauta de medicación.</li>
-            <li>Test Diario: Acceso al test diario, en caso de querer repetirlo o si olvidó registrarlo en el día.</li>
-            <li>Prodrómicos: Acceso al módulo de síntomas/signos prodrómicos, personalizando preguntas del test semanal según síntomas padecidos.</li>
-            <li>Palmarés: Galería para visualizar y consultar las medallas conseguidas en las últimas semanas.</li>
-            <li>Compartir: Permite compartir el gráfico por diversos medios online (email, redes sociales, etc).</li>
-            <li>Opciones: Acceso a la pantalla de configuraciones para seleccionar horas y días de realización de los tests, entre otras modificaciones.</li>
-            <li>Ref. Símbolos: Muestra los significados de los símbolos del gráfico de la pantalla principal.</li>
-            <li>Tutorial: Acceso a este tutorial.</li>
-            <li>Acerca de: Muestra información sobre la versión de la aplicación.</li>
-            <li>Salir: Desconectarse de la aplicación para acceder con otro usuario.</li>
-        </ul>
-    </p>
-</div>
+    <!-- Collapsible container for each section -->
+    <div class="container collapsible">
+        <h2 id="pantalla_principal">1. Pantalla principal</h2>
+        <div class="content">
+            <p>La pantalla principal muestra de manera aproximada la evolución en el tiempo de su estado de ánimo, según sus respuestas del test diario.
+                <br><br>
+                La línea central verde esmeralda indica la evolución de su estado de ánimo a lo largo del tiempo. Las demás líneas sirven como parámetros de referencia:
+                <ul>
+                    <li>La línea verde central establece un parámetro de base de estabilidad (NORMAL), aunque puede estar oculta por la línea verde esmeralda si su estabilidad es absoluta.</li>
+                    <li>La línea roja sugiere un estado importante de euforia, mientras que la amarilla sugiere un grado menor.</li>
+                    <li>En la parte inferior, la línea azul cielo indica un estado ánimo bajo o deprimido, mientras que la azul marino sugiere un estado depresivo aún más importante.</li>
+                </ul>
+                Estas líneas son solo referenciales y no diagnósticas. Un día aislado de altibajos no debería preocupar, pero si la línea indicadora se mantiene por mucho tiempo por debajo o arriba de las líneas de referencia, puede ser indicativo de una recaída.
+                <br><br>
+                En la parte inferior del gráfico se muestra la fecha aproximada en la que registró su estado de ánimo.
+                <br><br>
+                En el ángulo superior izquierdo de la pantalla principal, encontrará un menú con los siguientes ítems:
+                <ul>
+                    <li>Registrar evento estresante: Permite señalar un evento vital de importancia ocurrido en el día, con opción de marcar su tipo.</li>
+                    <li>Medicación: Acceso al módulo para registrar o modificar recordatorios de la pauta de medicación.</li>
+                    <li>Test Diario: Acceso al test diario, en caso de querer repetirlo o si olvidó registrarlo en el día.</li>
+                    <li>Prodrómicos: Acceso al módulo de síntomas/signos prodrómicos, personalizando preguntas del test semanal según síntomas padecidos.</li>
+                    <li>Palmarés: Galería para visualizar y consultar las medallas conseguidas en las últimas semanas.</li>
+                    <li>Compartir: Permite compartir el gráfico por diversos medios online (email, redes sociales, etc).</li>
+                    <li>Opciones: Acceso a la pantalla de configuraciones para seleccionar horas y días de realización de los tests, entre otras modificaciones.</li>
+                    <li>Ref. Símbolos: Muestra los significados de los símbolos del gráfico de la pantalla principal.</li>
+                    <li>Tutorial: Acceso a este tutorial.</li>
+                    <li>Acerca de: Muestra información sobre la versión de la aplicación.</li>
+                    <li>Salir: Desconectarse de la aplicación para acceder con otro usuario.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
-
-div class="container">
+<!-- Section 2: Test Diario -->
+<div class="container collapsible">
     <h2 id="test_diario">2. Test diario</h2>
-    <p>
-        El test diario consta de cinco sencillas preguntas secuenciales que se contestan rápidamente mediante un botón deslizante y un gráfico animado. 
-        <br><br>
-        Este botón deslizante, al moverse hacia la izquierda, indica un grado menor del síntoma a evaluar, y hacia la derecha, un grado mayor. La posición por defecto indica el estado basal más frecuente. 
-        <br><br>
-        Este test, de aproximadamente 1 minuto de duración, se le solicitará completar una vez al día, a la hora que usted lo configure.
-        <br><br>
-        En la esquina superior derecha de la pantalla, encontrará un botón que, al ser presionado, le mostrará información sobre cómo responder cada pregunta de la manera más adecuada posible. 
-        <br><br>
-        Además, encontrará un botón en la esquina superior derecha (>) para avanzar a la siguiente pregunta, y otro en la esquina superior izquierda (<) para retroceder y corregir respuestas. 
-        <br><br>
-        Las preguntas se alternan de forma aleatoria diariamente para evitar un efecto de "acostumbramiento" en las respuestas.
-        <br><br>
-        *Si activa el módulo de recordatorio de medicación en el menú de Opciones, las preguntas del test diario se reducen a 4.
-    </p>
+    <div class="content">
+        <p>
+            El test diario consta de cinco sencillas preguntas secuenciales que se contestan rápidamente mediante un botón deslizante y un gráfico animado.
+            <br><br>
+            Este botón deslizante, al moverse hacia la izquierda, indica un grado menor del síntoma a evaluar, y hacia la derecha, un grado mayor. La posición por defecto indica el estado basal más frecuente.
+            <br><br>
+            Este test, de aproximadamente 1 minuto de duración, se le solicitará completar una vez al día, a la hora que usted lo configure.
+            <br><br>
+            En la esquina superior derecha de la pantalla, encontrará un botón que, al ser presionado, le mostrará información sobre cómo responder cada pregunta de la manera más adecuada posible.
+            <br><br>
+            Además, encontrará un botón en la esquina superior derecha (>) para avanzar a la siguiente pregunta, y otro en la esquina superior izquierda (<) para retroceder y corregir respuestas.
+            <br><br>
+            Las preguntas se alternan de forma aleatoria diariamente para evitar un efecto de "acostumbramiento" en las respuestas.
+            <br><br>
+            *Si activa el módulo de recordatorio de medicación en el menú de Opciones, las preguntas del test diario se reducen a 4.
+        </p>
+    </div>
 </div>
 
-<div class="container">
+<!-- Section 3: Test Semanal -->
+<div class="container collapsible">
     <h2 id="test_semanal">3. Test semanal</h2>
-    <p>
-        El test semanal consta de varias preguntas que se responden con los botones de SI o NO. 
-        <br><br>
-        Este test se solicita una vez por semana en condiciones de estabilidad, aunque en casos de importantes variaciones del estado de ánimo, puede requerirse contestar una segunda vez en la misma semana. 
-        <br><br>
-        En otras ocasiones, en caso de posibles variaciones, puede requerirse contestar solo algunas de las preguntas del mismo test. 
-        <br><br>
-        En la pantalla de configuraciones, puede seleccionar el día de la semana preferido para realizar este test.
-        <br><br>
-        En la esquina superior derecha de la pantalla, encontrará un botón (>) para avanzar a la siguiente pregunta una vez que haya seleccionado su respuesta, y otro en la parte superior izquierda (<) para retroceder y corregir respuestas.
-        <br><br>
-        En caso de detectarse síntomas que requieran atención urgente durante el test semanal, se le ofrecerá llamar a urgencias desde su móvil, y se enviará automáticamente un correo electrónico a la dirección del referente que haya seleccionado en Opciones.
-        <br><br>
-        También, presionando el botón "Llamar a urgencias", su teléfono móvil llamará al número telefónico de urgencias configurado en Opciones.
-    </p>
+    <div class="content">
+        <p>
+            El test semanal consta de varias preguntas que se responden con los botones de SI o NO.
+            <br><br>
+            Este test se solicita una vez por semana en condiciones de estabilidad, aunque en casos de importantes variaciones del estado de ánimo, puede requerirse contestar una segunda vez en la misma semana.
+            <br><br>
+            En otras ocasiones, en caso de posibles variaciones, puede requerirse contestar solo algunas de las preguntas del mismo test.
+            <br><br>
+            En la pantalla de configuraciones, puede seleccionar el día de la semana preferido para realizar este test.
+            <br><br>
+            En la esquina superior derecha de la pantalla, encontrará un botón (>) para avanzar a la siguiente pregunta una vez que haya seleccionado su respuesta, y otro en la parte superior izquierda (<) para retroceder y corregir respuestas.
+            <br><br>
+            En caso de detectarse síntomas que requieran atención urgente durante el test semanal, se le ofrecerá llamar a urgencias desde su móvil, y se enviará automáticamente un correo electrónico a la dirección del referente que haya seleccionado en Opciones.
+            <br><br>
+            También, presionando el botón "Llamar a urgencias", su teléfono móvil llamará al número telefónico de urgencias configurado en Opciones.
+        </p>
+    </div>
 </div>
 
-<div class="container">
+<!-- Section 4: Mensaje Psicoeducativo -->
+<div class="container collapsible">
     <h2 id="mensaje_psicoeducativo">4. Mensaje psicoeducativo</h2>
-    <p>
-        Una o varias veces al día, dependiendo de su estado, recibirá a través de una notificación en su móvil breves mensajes psicoeducativos adaptados a su situación.
-        <br><br>
-        La hora inicial para recibir las notificaciones de estos mensajes puede ser seleccionada en la pantalla de configuraciones.
-        <br><br>
-        Una vez leído el mensaje, puede volver a la pantalla principal de su teléfono presionando el botón "Volver".
-    </p>
+    <div class="content">
+        <p>
+            Una o varias veces al día, dependiendo de su estado, recibirá a través de una notificación en su móvil breves mensajes psicoeducativos adaptados a su situación.
+            <br><br>
+            La hora inicial para recibir las notificaciones de estos mensajes puede ser seleccionada en la pantalla de configuraciones.
+            <br><br>
+            Una vez leído el mensaje, puede volver a la pantalla principal de su teléfono presionando el botón "Volver".
+        </p>
+    </div>
+</div>
+
+<!-- Section 5: Opciones de Configuración -->
+<div class="container collapsible">
+    <h2 id="opciones_de_configuracion">5. Opciones de configuración</h2>
+    <div class="content">
+        <p>
+            En la pantalla de Opciones/Configuraciones, podrá personalizar varios parámetros del funcionamiento de la aplicación:
+            <br><br>
+            - Configure el horario para recibir las notificaciones del test diario. Lo ideal es seleccionar una hora libre hacia el final del día para evaluar su estado de ánimo con tranquilidad.
+            <br><br>
+            - Establezca el horario para recibir los mensajes psicoeducativos, adaptados a su situación y que no llevarán más de un minuto en leer. Elija un momento en el cual esté libre para leerlos con calma.
+            <br><br>
+            - Seleccione el día de la semana para contestar el test semanal, que dura aproximadamente 5 minutos. Elija un día en el cual tenga más tiempo para completarlo con tranquilidad.
+            <br><br>
+            - En el apartado de "Medicamentos", active o desactive el recordatorio de medicación. Al activarlo, esta opción aparecerá en el menú y una de las preguntas del test diario será eliminada.
+            <br><br>
+            - En el apartado "General", configure la dirección de correo electrónico del referente receptor de mensajes de alerta y el número de urgencias/emergencias local al cual llamar en caso de sintomatología urgente.
+        </p>
+    </div>
+</div>
+
+<!-- Section 6: Registrar Eventos Estresantes -->
+<div class="container collapsible">
+    <h2 id="registrar_eventos_estresantes">6. Registrar Eventos Estresantes</h2>
+    <div class="content">
+        <p>
+            A través de esta opción, puede registrar un evento estresante relevante que haya ocurrido y que pueda tener incidencia sobre su estado de ánimo. Esto atenúa la puntuación del test diario y se marca como un símbolo en el gráfico.
+            <br><br>
+            Al hacer clic, se desplegará una lista de diferentes situaciones entre las cuales podrá seleccionar la que más se acerque al evento estresante que haya padecido. Seleccione la opción más cercana y luego presione "Guardar".
+            <br><br>
+            Puede guardar varios eventos estresantes en un solo día, pero solo uno se reflejará en el gráfico.
+        </p>
+    </div>
+</div>
+
+<!-- Section 7: Módulo de Medicación -->
+<div class="container collapsible">
+    <h2 id="modulo_de_medicacion">7. Módulo de medicación</h2>
+    <div class="content">
+        <p>
+            El módulo de medicación le permite listar su medicación y recibir recordatorios para tomarla a la hora indicada. Esto reemplazará la pregunta sobre la toma de medicación en el test diario de forma automática. Tenga en cuenta que si toma muchas medicaciones, recibirá muchas notificaciones.
+            <br><br>
+            Este módulo está diseñado para recordarle solo las medicaciones relacionadas con el trastorno bipolar, listadas en la aplicación.
+            <br><br>
+            Para activar el módulo, vaya al menú lateral y seleccione "Opciones". Cambie el botón de OFF a ON para activarlo. Luego, en el menú lateral, aparecerá la opción "Medicación".
+            <br><br>
+            Para agregar una nueva medicación, presione el signo (+) en la esquina superior derecha de la pantalla. Seleccione el medicamento y los horarios de toma. Finalmente, presione "Guardar".
+            <br><br>
+            Las franjas horarias de cada toma pueden configurarse accediendo al icono de la tuerca en la parte superior derecha de la pantalla de la lista de medicaciones. Para modificar o eliminar una medicación, mantenga presionado su nombre.
+            <br><br>
+            Al activar el módulo, se eliminará la última pregunta del test diario, ya que será reemplazada por sus respuestas sobre la toma de medicación.
+        </p>
+    </div>
+</div>
+
+<!-- Section 8: Módulo de Pródromos -->
+<div class="container collapsible">
+    <h2 id="modulo_de_prodroMos">8. Módulo de pródromos</h2>
+    <div class="content">
+        <p>
+            Identificar el inicio de nuevos episodios es crucial para actuar rápidamente y evitar recaídas y sus consecuencias. A estos primeros signos de alarma se les llama "pródromos".
+            <br><br>
+            El módulo de pródromos le permite elaborar una lista de estos signos, centrándose en conductas objetivas y evaluables en el día a día. Identifique 3 señales de alarma y llénelas de forma sintética. Estas preguntas formarán parte del test semanal.
+            <br><br>
+            No se alarme ante la aparición de una señal aislada, pero si se presentan más de dos señales repetidas durante 2-3 días, contacte con su profesional de salud.
+        </p>
+    </div>
 </div>
   
-  <div class="container">
-    <h2 id="opciones_de_configuracion">5. Opciones de configuración</h2>
-    <p>
-        En la pantalla de Opciones/Configuraciones, podrá personalizar varios parámetros del funcionamiento de la aplicación:
-        <br><br>
-        - Configure el horario para recibir las notificaciones del test diario. Lo ideal es seleccionar una hora libre hacia el final del día para evaluar su estado de ánimo con tranquilidad.
-        <br><br>
-        - Establezca el horario para recibir los mensajes psicoeducativos, adaptados a su situación y que no llevarán más de un minuto en leer. Elija un momento en el cual esté libre para leerlos con calma.
-        <br><br>
-        - Seleccione el día de la semana para contestar el test semanal, que dura aproximadamente 5 minutos. Elija un día en el cual tenga más tiempo para completarlo con tranquilidad.
-        <br><br>
-        - En el apartado de "Medicamentos", active o desactive el recordatorio de medicación. Al activarlo, esta opción aparecerá en el menú y una de las preguntas del test diario será eliminada.
-        <br><br>
-        - En el apartado "General", configure la dirección de correo electrónico del referente receptor de mensajes de alerta y el número de urgencias/emergencias local al cual llamar en caso de sintomatología urgente.
-    </p>
-</div>
-
-<div class="container">
-    <h2 id="registrar_eventos_estresantes">6. Registrar Eventos Estresantes</h2>
-    <p>
-        A través de esta opción, puede registrar un evento estresante relevante que haya ocurrido y que pueda tener incidencia sobre su estado de ánimo. Esto atenúa la puntuación del test diario y se marca como un símbolo en el gráfico.
-        <br><br>
-        Al hacer clic, se desplegará una lista de diferentes situaciones entre las cuales podrá seleccionar la que más se acerque al evento estresante que haya padecido. Seleccione la opción más cercana y luego presione "Guardar".
-        <br><br>
-        Puede guardar varios eventos estresantes en un solo día, pero solo uno se reflejará en el gráfico.
-    </p>
-</div>
-
-<div class="container">
-    <h2 id="modulo_de_medicacion">7. Módulo de medicación</h2>
-    <p>
-        El módulo de medicación le permite listar su medicación y recibir recordatorios para tomarla a la hora indicada. Esto reemplazará la pregunta sobre la toma de medicación en el test diario de forma automática. Tenga en cuenta que si toma muchas medicaciones, recibirá muchas notificaciones.
-        <br><br>
-        Este módulo está diseñado para recordarle solo las medicaciones relacionadas con el trastorno bipolar, listadas en la aplicación.
-        <br><br>
-        Para activar el módulo, vaya al menú lateral y seleccione "Opciones". Cambie el botón de OFF a ON para activarlo. Luego, en el menú lateral, aparecerá la opción "Medicación".
-        <br><br>
-        Para agregar una nueva medicación, presione el signo (+) en la esquina superior derecha de la pantalla. Seleccione el medicamento y los horarios de toma. Finalmente, presione "Guardar".
-        <br><br>
-        Las franjas horarias de cada toma pueden configurarse accediendo al icono de la tuerca en la parte superior derecha de la pantalla de la lista de medicaciones. Para modificar o eliminar una medicación, mantenga presionado su nombre.
-        <br><br>
-        Al activar el módulo, se eliminará la última pregunta del test diario, ya que será reemplazada por sus respuestas sobre la toma de medicación.
-    </p>
-</div>
-
-<div class="container">
-    <h2 id="modulo_de_prodroMos">8. Módulo de pródromos</h2>
-    <p>
-        Identificar el inicio de nuevos episodios es crucial para actuar rápidamente y evitar recaídas y sus consecuencias. A estos primeros signos de alarma se les llama "pródromos".
-        <br><br>
-        El módulo de pródromos le permite elaborar una lista de estos signos, centrándose en conductas objetivas y evaluables en el día a día. Identifique 3 señales de alarma y llénelas de forma sintética. Estas preguntas formarán parte del test semanal.
-        <br><br>
-        No se alarme ante la aparición de una señal aislada, pero si se presentan más de dos señales repetidas durante 2-3 días, contacte con su profesional de salud.
-    </p>
-</div>
-
 <div class="container">
     <h2 id="mas_informacion_del_proyecto">9. Más información del proyecto</h2>
-    <p>Puede encontrar más información sobre el proyecto en <a href="https://simplebipolarproject.org/">https://simplebipolarproject.org/</a></p>
+    <p>
+        Puede encontrar más información sobre el proyecto en <a href="https://simplebipolarproject.org/">https://simplebipolarproject.org/</a>
+    </p>
 </div>
 
-  <script>
-  // Add functionality to make navigation links collapsible
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-</script>
-  
+    <script>
+        // Add functionality to make navigation links collapsible
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
 </body>
+
 </html>
